@@ -1,0 +1,13 @@
+Label 0: 	{'dest': 'v', 'op': 'const', 'type': 'int', 'value': 4}
+					{'dest': 'b', 'op': 'const', 'type': 'bool', 'value': False}
+					{'args': ['b'], 'labels': ['there', 'here'], 'op': 'br'}
+Label 1: 	{'label': 'here'}
+					{'dest': 'v', 'op': 'const', 'type': 'int', 'value': 2}
+Label 2: 	{'label': 'there'}
+					{'args': ['v'], 'op': 'print'}
+
+
+Function main:
+  Block '0' -> [2, 1]
+  Block '1' -> [2]
+  Block '2' -> ['exit']

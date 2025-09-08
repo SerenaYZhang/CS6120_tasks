@@ -1,0 +1,32 @@
+Label 0: 	{'dest': 'v0', 'op': 'const', 'type': 'int', 'value': 8}
+					{'args': ['v0'], 'dest': 'value', 'op': 'id', 'type': 'int'}
+					{'dest': 'v1', 'op': 'const', 'type': 'int', 'value': 1}
+					{'args': ['v1'], 'dest': 'result', 'op': 'id', 'type': 'int'}
+					{'args': ['value'], 'dest': 'v3', 'op': 'id', 'type': 'int'}
+					{'args': ['v3'], 'dest': 'i', 'op': 'id', 'type': 'int'}
+Label 1: 	{'label': 'for.cond'}
+					{'args': ['i'], 'dest': 'v4', 'op': 'id', 'type': 'int'}
+					{'dest': 'v5', 'op': 'const', 'type': 'int', 'value': 0}
+					{'args': ['v4', 'v5'], 'dest': 'v6', 'op': 'gt', 'type': 'bool'}
+					{'args': ['v6'], 'labels': ['for.body', 'for.end'], 'op': 'br'}
+Label 2: 	{'label': 'for.body'}
+					{'args': ['result'], 'dest': 'v7', 'op': 'id', 'type': 'int'}
+					{'args': ['i'], 'dest': 'v8', 'op': 'id', 'type': 'int'}
+					{'args': ['v7', 'v8'], 'dest': 'v9', 'op': 'mul', 'type': 'int'}
+					{'args': ['v9'], 'dest': 'result', 'op': 'id', 'type': 'int'}
+					{'args': ['i'], 'dest': 'v10', 'op': 'id', 'type': 'int'}
+					{'dest': 'v11', 'op': 'const', 'type': 'int', 'value': 1}
+					{'args': ['v10', 'v11'], 'dest': 'v12', 'op': 'sub', 'type': 'int'}
+					{'args': ['v12'], 'dest': 'i', 'op': 'id', 'type': 'int'}
+					{'labels': ['for.cond'], 'op': 'jmp'}
+Label 3: 	{'label': 'for.end'}
+					{'args': ['result'], 'dest': 'v13', 'op': 'id', 'type': 'int'}
+					{'args': ['v13'], 'op': 'print'}
+					{'dest': 'v14', 'op': 'const', 'type': 'int', 'value': 0}
+
+
+Function main:
+  Block '0' -> [1]
+  Block '1' -> [2, 3]
+  Block '2' -> [1]
+  Block '3' -> ['exit']

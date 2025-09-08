@@ -1,0 +1,11 @@
+Label 0: 	{'dest': 'v', 'op': 'const', 'type': 'int', 'value': 4}
+					{'labels': ['somewhere'], 'op': 'jmp'}
+Label 1: 	{'dest': 'v', 'op': 'const', 'type': 'int', 'value': 2}
+Label 2: 	{'label': 'somewhere'}
+					{'args': ['v'], 'op': 'print'}
+
+
+Function main:
+  Block '0' -> [2]
+  Block '1' -> [2]
+  Block '2' -> ['exit']
