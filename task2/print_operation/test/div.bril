@@ -1,0 +1,6 @@
+@main {
+  v0: int = const 50;
+  v1: int = const 25;
+  v2: int = div v0 v1;
+  print v2;
+}

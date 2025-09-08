@@ -1,0 +1,11 @@
+@main {
+  v0: int = const 15;
+  v1: int = const 9;
+  v2: int = add v0 v1;
+  v3: int = const 6;
+  v4: int = sub v2 v3;
+  v5: int = const 2;
+  v6: int = mul v4 v5;
+  v7: int = div v6 v3
+  print v7;
+}
