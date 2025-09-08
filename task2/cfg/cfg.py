@@ -66,7 +66,7 @@ def cfg():
         graph = find_cfg(blocks, label_map)
         print(f"Function {func['name']}:")
         for label, successors in graph.items():
-            print(f"  Block '{label}' -> {successors}")
+            print(f"  Block {label} -> {successors}")
     return 0
 
 

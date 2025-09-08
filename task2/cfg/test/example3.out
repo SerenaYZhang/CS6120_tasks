@@ -26,7 +26,7 @@ Label 3: 	{'label': 'for.end'}
 
 
 Function main:
-  Block '0' -> [1]
-  Block '1' -> [2, 3]
-  Block '2' -> [1]
-  Block '3' -> ['exit']
+  Block 0 -> [1]
+  Block 1 -> [2, 3]
+  Block 2 -> [1]
+  Block 3 -> ['exit']

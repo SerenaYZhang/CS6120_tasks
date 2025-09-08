@@ -8,6 +8,6 @@ Label 2: 	{'label': 'there'}
 
 
 Function main:
-  Block '0' -> [2, 1]
-  Block '1' -> [2]
-  Block '2' -> ['exit']
+  Block 0 -> [2, 1]
+  Block 1 -> [2]
+  Block 2 -> ['exit']
